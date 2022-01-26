@@ -5,6 +5,114 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <style>
+      /* #first {
+        width: 100px;
+        height: 100px;
+        padding: 10px;
+        border: 2px solid red;
+        margin: 20px;
+        background-color: aqua;
+      }
+      div.name {
+        background-color: pink !important;
+      }
+      div#myId {
+        background-color: aqua;
+      }
+      .outer {
+        width: 300px;
+        height: 300px;
+        background-color: teal;
+        position: relative;
+      }
+      .inner {
+        width: 100px;
+        height: 100px;
+        background-color: blanchedalmond;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+      div {
+        width: 300px;
+        height: 150px;
+        background: rgb(255, 82, 82);
+        border: 6px solid rgb(25, 37, 202);
+      }
+      .two {
+        position: fixed;
+        top: 50px;
+      } */
+      .dis {
+        display: none;
+      }
+      .tri {
+        width: 0px;
+        height: 0px;
+
+        /* border-top: 50px solid blueviolet; */
+        border-left: 50px solid transparent;
+        border-right: 50px solid transparent;
+        border-bottom: 50px solid pink;
+      }
+      p:hover::first-letter {
+        font-size: 40px;
+      }
+      .profile:hover::before {
+        display: inline-block;
+        content: attr(data-id);
+      }
+    </style>
   </head>
-  <body></body>
+  <body>
+    <!-- <h1>The progress element</h1>
+
+    <label for="file">Downloading progress:</label>
+    <progress id="file" value="50" max="100">50%</progress>
+    <div id="first"></div>
+    <div class="name" id="myId">specificity</div>
+    <div class="outer">
+      <div class="inner"></div>
+    </div> -->
+    <!-- 
+    <div class="one">one</div>
+    <br />
+    <div class="two">two</div>
+    <br />
+    <div class="three">three</div>
+    <div class="three">three</div>
+    <div class="three">three</div>
+    <div class="three">three</div>
+    <div class="three">three</div>
+    <div class="three">three</div>
+    <div class="three">three</div>
+    <div class="three">three</div>
+    <div class="three">three</div> -->
+    <!-- 
+    <div class="dis">name</div>
+    <div>other</div>
+    <div class="tri"></div> -->
+    <p>Hi</p>
+    <p>Hi</p>
+    <p>Hi</p>
+    <p>Hi</p>
+    <p>Hi</p>
+    <p>Hi</p>
+    <p>Hi</p>
+    <div
+      class="profile"
+      data-name="swetha"
+      data-yoututbe="my fav javascript"
+      data-id="1"
+    >
+      profule
+    </div>
+  </body>
+  <script>
+    document.getElementById("file").addEventListener("keydown", e => {
+      e.target.value = 80
+    })
+  </script>
 </html>
